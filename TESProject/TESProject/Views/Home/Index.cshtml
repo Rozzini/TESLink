@@ -1,8 +1,75 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@*@{
+        ViewData["Title"] = "Home Page";
+    }*@
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Side Navigation Bar</title>
+        <link rel="stylesheet" href="~/css/mapStyle3.css">
+        <link rel="stylesheet" href="~/css/VerticalNaviBar2.css">
+    </head>
+    <body>
+
+        <div>
+            <div id="map"></div>
+
+            <script src="~/js/map.js"></script>
+
+            <script src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDaoLdV31Y5ls8ABBpuAQt9t8RzMDfOMiM"></script>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+
+
+        <span class="sideBarButton" onclick="openNav()">&#9776; open</span>
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+    </body>
+
+@*<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Side Navigation Bar</title>
+    <link rel="stylesheet" href="~/css/mapStyle.css">
+    <link rel="stylesheet" href="~/css/VerticalNaviBar.css">
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+
+    
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+</body>
+</html>*@
