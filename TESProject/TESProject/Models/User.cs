@@ -10,10 +10,6 @@ namespace TESProject.Models
     {
         public int UserId { get; set; }
 
-        public string UserEmail { get; set; }
-
-        public string UserPassword { get; set; }
-
         public string Name { get; set; }
 
     }

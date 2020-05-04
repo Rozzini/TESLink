@@ -33,7 +33,7 @@ namespace TESProject
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-            //services.AddIdentity<User, IdentityRole>()
+            //services.AddIdentity<IdentityUser, IdentityRole>()
             //      .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
             services.AddRazorPages();
