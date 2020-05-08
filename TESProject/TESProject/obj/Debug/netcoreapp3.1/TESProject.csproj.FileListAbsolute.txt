@@ -153,3 +153,15 @@ D:\Project\TESLink\TESProject\TESProject\bin\Debug\netcoreapp3.1\zh-Hant\Microso
 D:\Project\TESLink\TESProject\TESProject\obj\Debug\netcoreapp3.1\TESProject.MvcApplicationPartsAssemblyInfo.cs
 D:\Project\TESLink\TESProject\TESProject\obj\Debug\netcoreapp3.1\TESProject.MvcApplicationPartsAssemblyInfo.cache
 D:\Project\TESLink\TESProject\TESProject\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+D:\Project\TESLink\TESProject\TESProject\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+D:\Project\TESLink\TESProject\TESProject\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
+D:\Project\TESLink\TESProject\TESProject\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\Email.cshtml.g.cs
+D:\Project\TESLink\TESProject\TESProject\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\PersonalData.cshtml.g.cs
+D:\Project\TESLink\TESProject\TESProject\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
+D:\Project\TESLink\TESProject\TESProject\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
+D:\Project\TESLink\TESProject\TESProject\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+D:\Project\TESLink\TESProject\TESProject\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+D:\Project\TESLink\TESProject\TESProject\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+D:\Project\TESLink\TESProject\TESProject\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+D:\Project\TESLink\TESProject\TESProject\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_RegisterLayout.cshtml.g.cs
+D:\Project\TESLink\TESProject\TESProject\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs

@@ -2,8 +2,8 @@
         ViewData["Title"] = "Home Page";
     }*@
 @using Microsoft.AspNetCore.Identity
-    @inject SignInManager<IdentityUser> SignInManager
-    @inject UserManager<IdentityUser> UserManager
+    @inject SignInManager<User> SignInManager
+    @inject UserManager<User> UserManager
 
     <head>
         <meta charset="UTF-8">
@@ -37,7 +37,7 @@
 
         <div id="el" class="menuEllements">
             <div>
-                <button class="menuButtons"> <a href="https://localhost:44313/Identity/Account/Register"> <img src="~/images/Profile.png" /> Profile</a> </button>
+                <button class="menuButtons"> <a href="https://localhost:44313/Account/Register"> <img src="~/images/Profile.png" /> Profile</a> </button>
             </div>
 
             <div>

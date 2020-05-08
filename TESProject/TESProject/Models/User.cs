@@ -8,8 +8,6 @@ namespace TESProject.Models
 {
     public class User : IdentityUser
     {
-        public int UserId { get; set; }
-
         public string Name { get; set; }
 
     }
