@@ -35,10 +35,15 @@
                <h2>LoginName</h2>
             }
 
-        <div class="menuEllements">
-            <a href="https://localhost:44313/Identity/Account/Register">👤Profile</a>
-            <a href="#"><img src="~/images/Posts.png" /> Posts</a>
-            <a href="#"><img src="~/images/LogOut.png" /> Logout</a>
+        <div id="el" class="menuEllements">
+            <button style="height:50px;width:200px; background-color: Transparent; background-repeat:no-repeat; border: none; overflow: hidden; outline:none;"> <a href="https://localhost:44313/Identity/Account/Register"> <img src="~/images/Profile.png" /> Profile</a> </button>
+            @*<div id="el"> <a href="https://localhost:44313/Identity/Account/Register"> <img src="~/images/Profile.png" /> Profile</a> </div>*@
+            <div id="el">
+             <button style="height:50px;width:200px; background-color: Transparent; background-repeat:no-repeat; border: none; overflow: hidden; outline:none;"> <a href="#"> <img src="~/images/Posts.png" /> Posts</a> </button>
+            </div>
+             <div id="el">
+                <button style="height:50px;width:200px; background-color: Transparent; background-repeat:no-repeat; border: none; overflow: hidden; outline:none;"> <a href="#"> <img src="~/images/LogOut.png" /> Logout</a> </button>
+             </div>
         </div>
 
         </div>
@@ -49,10 +54,12 @@
         <script>
             function openNav() {
                 document.getElementById("mySidenav").style.width = "300px";
+                //document.getElementById("el").style.width = "100px";
             }
 
             function closeNav() {
                 document.getElementById("mySidenav").style.width = "0px";
+                //document.getElementById("el").style.width = "0px";
             }
 
         </script>
