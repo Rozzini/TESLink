@@ -9,7 +9,7 @@
         <meta charset="UTF-8">
         <title>Side Navigation Bar</title>
         <link rel="stylesheet" href="~/css/mapStyle3.css">
-        <link rel="stylesheet" href="~/css/VerticalNaviBar3.css">
+        <link rel="stylesheet" href="~/css/VerticalNaviBar4.css">
     </head>
 
     <body>
@@ -36,14 +36,17 @@
             }
 
         <div id="el" class="menuEllements">
-            <button style="height:50px;width:200px; background-color: Transparent; background-repeat:no-repeat; border: none; overflow: hidden; outline:none;"> <a href="https://localhost:44313/Identity/Account/Register"> <img src="~/images/Profile.png" /> Profile</a> </button>
-            @*<div id="el"> <a href="https://localhost:44313/Identity/Account/Register"> <img src="~/images/Profile.png" /> Profile</a> </div>*@
-            <div id="el">
-             <button style="height:50px;width:200px; background-color: Transparent; background-repeat:no-repeat; border: none; overflow: hidden; outline:none;"> <a href="#"> <img src="~/images/Posts.png" /> Posts</a> </button>
+            <div>
+                <button class="menuButtons"> <a href="https://localhost:44313/Identity/Account/Register"> <img src="~/images/Profile.png" /> Profile</a> </button>
             </div>
-             <div id="el">
-                <button style="height:50px;width:200px; background-color: Transparent; background-repeat:no-repeat; border: none; overflow: hidden; outline:none;"> <a href="#"> <img src="~/images/LogOut.png" /> Logout</a> </button>
-             </div>
+
+            <div>
+                <button class="menuButtons"> <a href="#"> <img src="~/images/Posts.png" /> Posts</a> </button>
+            </div>
+
+            <div>
+                <button class="menuButtons"> <a href="#"> <img src="~/images/LogOut.png" /> Logout</a> </button>
+            </div>
         </div>
 
         </div>
@@ -54,12 +57,10 @@
         <script>
             function openNav() {
                 document.getElementById("mySidenav").style.width = "300px";
-                //document.getElementById("el").style.width = "100px";
             }
 
             function closeNav() {
                 document.getElementById("mySidenav").style.width = "0px";
-                //document.getElementById("el").style.width = "0px";
             }
 
         </script>
