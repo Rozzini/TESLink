@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TESProject", "TESProject\TESProject.csproj", "{A42BCF5E-B03D-457A-9C45-3EF37E8BD9DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TESProject", "TESProject\TESProject.csproj", "{A42BCF5E-B03D-457A-9C45-3EF37E8BD9DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

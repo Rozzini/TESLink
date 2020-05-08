@@ -12,7 +12,7 @@ window.initMap = function () {
         //restriction: {
         //    latLngBounds: {
         //        north: 0,
-        //        south: 0,
+        //        south: 0,E
         //        west: 0,
         //        east: 0
         //    }
@@ -21,7 +21,6 @@ window.initMap = function () {
         zoom: 6,
         disableDefaultUI: true
     });
-
 
 
     layer = new google.maps.ImageMapType({
@@ -33,6 +32,7 @@ window.initMap = function () {
                 .replace('{y}', coord.y)
                 .replace('{z}', zoom);
             return url;
+            
         },
         tileSize: new google.maps.Size(325, 512),
         minZoom: 3,

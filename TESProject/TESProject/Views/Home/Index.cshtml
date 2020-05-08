@@ -1,14 +1,17 @@
 ﻿@*@{
         ViewData["Title"] = "Home Page";
     }*@
-
+@using Microsoft.AspNetCore.Identity
+    @inject SignInManager<IdentityUser> SignInManager
+    @inject UserManager<IdentityUser> UserManager
 
     <head>
         <meta charset="UTF-8">
         <title>Side Navigation Bar</title>
         <link rel="stylesheet" href="~/css/mapStyle3.css">
-        <link rel="stylesheet" href="~/css/VerticalNaviBar2.css">
+        <link rel="stylesheet" href="~/css/VerticalNaviBar3.css">
     </head>
+
     <body>
 
         <div>
@@ -20,56 +23,39 @@
         </div>
 
         <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9776;</a>
+            <img class="imagePadding" src="~/images/ProfilePicture.png" />
+
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <h2>@User.Identity.Name</h2>
+            }
+            else
+            {
+               <h2>LoginName</h2>
+            }
+
+        <div class="menuEllements">
+            <a href="https://localhost:44313/Identity/Account/Register">👤Profile</a>
+            <a href="#"><img src="~/images/Posts.png" /> Posts</a>
+            <a href="#"><img src="~/images/LogOut.png" /> Logout</a>
+        </div>
+
         </div>
 
 
-        <span class="sideBarButton" onclick="openNav()">&#9776; open</span>
+        <span class="sideBarButton" onclick="openNav()"> <img src="~/images/OpenMenu.png" /></span>
 
         <script>
             function openNav() {
-                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("mySidenav").style.width = "300px";
             }
 
             function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("mySidenav").style.width = "0px";
             }
+
         </script>
+
     </body>
 
-@*<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Side Navigation Bar</title>
-    <link rel="stylesheet" href="~/css/mapStyle.css">
-    <link rel="stylesheet" href="~/css/VerticalNaviBar.css">
-</head>
-<body>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-    </div>
-
-    
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
-
-</body>
-</html>*@

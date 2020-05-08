@@ -2,9 +2,22 @@
     font-family: "Lato", sans-serif;
 }
 
+.imagePadding{
+    padding-left: 18%;
+}
+
+.menuEllements{
+    padding-top: 50px;
+}
+
+h2 {
+    color: #ffffff;
+    padding-left: 24%;
+}
 .sideBarButton {
     position:absolute;
-    top: 0px;
+    top: 20px;
+    left: 20px;
     color: white;
     font-size: 30px;
     cursor: pointer;
@@ -17,23 +30,24 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #0c0f2f;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    border-right: 4px solid #fcfcfc;
 }
 
     .sidenav a {
-        padding: 8px 8px 8px 32px;
+        padding: 8px 8px 30px 32px;
         text-decoration: none;
         font-size: 25px;
-        color: #818181;
+        color: white;
         display: block;
         transition: 0.3s;
     }
 
         .sidenav a:hover {
-            color: #f1f1f1;
+            color: white;
         }
 
     .sidenav .closebtn {
