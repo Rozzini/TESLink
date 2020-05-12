@@ -6,26 +6,23 @@
     <head>
         <meta charset="UTF-8">
         <title>Side Navigation Bar</title>
-        <link rel="stylesheet" href="~/css/RegisterPageStyle.css">
+        <link rel="stylesheet" href="~/css/RegisterPageStyle1.css">
     </head>
 
 
     <form method="post" asp-controller="Account" asp-action="Register">
-        <div asp-validation-summary="ModelOnly"></div>
         <img class="img1" src="~/images/ProfilePicture.png" />
         <h2>Registration</h2>
+        <div asp-validation-summary="All" style="color:red;" class="text-danger"></div>
         <div>
-            <input asp-for="Email" placeholder="Email"/>
-            <span asp-validation-for="Email"></span>
+            <input asp-for="Email" placeholder="Email" />
         </div>
 
         <div>
-            <input asp-for="Password" placeholder="Password"/>
-            <span asp-validation-for="Password"></span>
+            <input asp-for="Password" placeholder="Password" />
         </div>
         <div>
             <input asp-for="PasswordConfirm" placeholder="Confirm password" />
-            <span asp-validation-for="PasswordConfirm"></span>
         </div>
         <div>
             <input class="submitButton" type="submit" value="Submit" />

@@ -2,6 +2,31 @@
     font-family: Arial;
 }
 
+span.field-validation-error {
+    color: red;
+}
+
+form.field-validation-error {
+    color: red;
+}
+
+unput.field-validation-error {
+    color: red;
+}
+
+.validation-summary-errors ul {
+    list-style: none;
+}
+
+.validation-summary-errors li {
+    list-style: none;
+}
+
+body {
+    background-color: #0d102f;
+}
+
+
 body {
     background-color: #0c0f2f; /* Цвет фона веб-страницы */
 }

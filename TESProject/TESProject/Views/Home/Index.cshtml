@@ -9,7 +9,7 @@
         <meta charset="UTF-8">
         <title>Side Navigation Bar</title>
         <link rel="stylesheet" href="~/css/mapStyle3.css">
-        <link rel="stylesheet" href="~/css/VerticalNaviBar10.css">
+        <link rel="stylesheet" href="~/css/VerticalNaviBarA.css">
     </head>
 
     <body>
@@ -48,21 +48,22 @@
                     <button class="menuButtons"> <a href="https://localhost:44313/Account/Login"> <img src="~/images/Profile.png" style="padding-right: 10px;" /> Profile</a> </button>
                 </div>
             }
-            <div style="padding-top: 15px">
-                <button class="menuButtons"> <a href="#"> <img src="~/images/Posts.png" style="padding-right: 16px;" />  Posts</a> </button>
+            <div style="padding-top: 15px;">
+                <button class="menuButtons" type="submit"> <a href="#"> <img src="~/images/Posts.png" style="padding-right: 16px;" />  Posts</a> </button>
             </div>
 
-
-            @if (SignInManager.IsSignedIn(User))
-            {
-                using (Html.BeginForm("Logout", "Account", FormMethod.Post))
+            <div style="cursor: pointer;">
+                @if (SignInManager.IsSignedIn(User))
                 {
-                    @Html.AntiForgeryToken()                    
-                            <div style="padding-top: 15px" asp-area="Identity" asp-page="/Users/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">                              
-                               <button class="menuButtons" type="submit"><img src="~/images/LogOut.png" style="padding-right: 18px;" />Logout</button>
-                            </div>                       
+                    using (Html.BeginForm("Logout", "Account", FormMethod.Post))
+                    {
+                        @Html.AntiForgeryToken()
+                        <div style="padding-top: 15px;" asp-area="Identity" asp-page="/Users/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                            <button class="menuButtons"><a><img src="~/images/LogOut.png" style="padding-right: 18px;" />Logout</a></button>
+                        </div>
+                    }
                 }
-            }
+            </div>
         </div>
 
             </div>

@@ -7,22 +7,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Side Navigation Bar</title>
-    <link rel="stylesheet" href="~/css/LoginPageStyle1.css">
+    <link rel="stylesheet" href="~/css/LoginPageStyle3.css">
 </head>
 
 <body>
-    <form method="post" asp-controller="Account" asp-action="Login"
-          asp-route-returnUrl="@Model.ReturnUrl">
+    <form method="post" asp-controller="Account" asp-action="Login" asp-route-returnUrl="@Model.ReturnUrl">
         <img class="img1" src="~/images/ProfilePicture.png" />
         <h1> Login</h1>
-        <div asp-validation-summary="ModelOnly"></div>
+        <div asp-validation-summary="All" style="color:red;" class="text-danger"></div>
         <div>
             <input asp-for="Email" placeholder="Email" />
-            <span asp-validation-for="Email"></span>
         </div>
         <div>
             <input asp-for="Password" placeholder="Password" />
-            <span asp-validation-for="Password"></span>
         </div>
         <div>
             <input class="submitButton" type="submit" value="Submit" />

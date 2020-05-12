@@ -144,9 +144,6 @@ namespace TESProject.Controllers
                 var user = await _userManager.FindByEmailAsync(model.Email);
                 if (user == null || !(await _userManager.IsEmailConfirmedAsync(user)))
                 {
-                    // пользователь с данным email может отсутствовать в бд
-                    // тем не менее мы выводим стандартное сообщение, чтобы скрыть 
-                    // наличие или отсутствие пользователя в бд
                     return View("ForgotPasswordConfirmation");
                 }
 
