@@ -4,22 +4,27 @@
 
 span.field-validation-error {
     color: red;
+    padding-right: 20px;
 }
 
 form.field-validation-error {
     color: red;
+    padding-right: 20px;
 }
 
 unput.field-validation-error {
     color: red;
+    padding-right: 20px;
 }
 
 .validation-summary-errors ul {
     list-style: none;
+    padding-right: 20px;
 }
 
 .validation-summary-errors li {
     list-style: none;
+    padding-right: 20px;
 }
 
 body {
