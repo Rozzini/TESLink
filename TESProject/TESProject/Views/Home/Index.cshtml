@@ -9,7 +9,7 @@
         <meta charset="UTF-8">
         <title>Side Navigation Bar</title>
         <link rel="stylesheet" href="~/css/mapStyle3.css">
-        <link rel="stylesheet" href="~/css/VerticalNaviBar.css">
+        <link rel="stylesheet" href="~/css/VerticalNaviBar10.css">
     </head>
 
     <body>
@@ -55,16 +55,13 @@
 
             @if (SignInManager.IsSignedIn(User))
             {
-                using (Html.BeginForm("Logout", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+                using (Html.BeginForm("Logout", "Account", FormMethod.Post))
                 {
                     @Html.AntiForgeryToken()                    
-                        <form asp-area="Identity" asp-page="/Users/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
-                            <button type="submit">Logout</button>
-                        </form>                       
+                            <div style="padding-top: 15px" asp-area="Identity" asp-page="/Users/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">                              
+                               <button class="menuButtons" type="submit"><img src="~/images/LogOut.png" style="padding-right: 18px;" />Logout</button>
+                            </div>                       
                 }
-                @*<div style="padding-top: 15px">
-                 <button class="menuButtons" type="submit"><a asp-area="Identity" asp-page="/Account/Logout"><img src="~/images/LogOut.png" style="padding-right: 18px;"/>Logout</a></button>
-            </div>*@
             }
         </div>
 

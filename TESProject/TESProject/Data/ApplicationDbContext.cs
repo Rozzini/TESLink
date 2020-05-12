@@ -13,6 +13,7 @@ namespace TESProject.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
+            Database.EnsureCreated();
         }
 
         public DbSet<User> MyUsers { get; set; }
