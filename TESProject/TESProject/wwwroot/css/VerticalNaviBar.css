@@ -2,8 +2,10 @@
     font-family: "Lato", sans-serif;
 }
 
-.imagePadding{
-    padding-left: 18%;
+.imagePadding {
+    padding: 70px 0px 0px 75px;
+    height: 140px;
+    width: 150px;
 }
 
 .menuEllements{
@@ -23,15 +25,14 @@
     outline: none;
 }
 
-h3 {
-    color: #ffffff;
-    padding-left: 24%;
-}
-
-h2{
+h3, h2 {
+    height: 50px;
+    text-align:center;
+    width: 300px;
     color: white;
     text-align: center;
 }
+
 .sideBarButton {
     position:absolute;
     top: 20px;

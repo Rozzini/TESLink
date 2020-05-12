@@ -9,14 +9,7 @@ window.initMap = function () {
     mapEl = document.querySelector('#map');
 
     map = new google.maps.Map(mapEl, {
-        //restriction: {
-        //    latLngBounds: {
-        //        north: 0,
-        //        south: 0,E
-        //        west: 0,
-        //        east: 0
-        //    }
-        //},
+        
         center: new google.maps.LatLng(0, 0),      //78, 150
         zoom: 6,
         disableDefaultUI: true

@@ -9,7 +9,7 @@
         <meta charset="UTF-8">
         <title>Side Navigation Bar</title>
         <link rel="stylesheet" href="~/css/mapStyle3.css">
-        <link rel="stylesheet" href="~/css/VerticalNaviBar5.css">
+        <link rel="stylesheet" href="~/css/VerticalNaviBar.css">
     </head>
 
     <body>
@@ -32,24 +32,43 @@
             }
             else
             {
-               <h3>Login Name</h3>
+               <h3>LoginName</h3>
             }
 
         <div id="el" class="menuEllements">
-            <div>
-                <button class="menuButtons"> <a href="https://localhost:44313/Account/Login"> <img src="~/images/Profile.png" /> Profile</a> </button>
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <div>
+                    <button class="menuButtons"> <a href="#"> <img src="~/images/Profile.png" style="padding-right: 10px;" /> Profile</a> </button>
+                </div>
+            }
+            else
+            {
+                <div>
+                    <button class="menuButtons"> <a href="https://localhost:44313/Account/Login"> <img src="~/images/Profile.png" style="padding-right: 10px;" /> Profile</a> </button>
+                </div>
+            }
+            <div style="padding-top: 15px">
+                <button class="menuButtons"> <a href="#"> <img src="~/images/Posts.png" style="padding-right: 16px;" />  Posts</a> </button>
             </div>
 
-            <div>
-                <button class="menuButtons"> <a href="#"> <img src="~/images/Posts.png" /> Posts</a> </button>
-            </div>
 
-            <div>
-                <button class="menuButtons"> <a href="#"> <img src="~/images/LogOut.png" /> Logout</a> </button>
-            </div>
+            @if (SignInManager.IsSignedIn(User))
+            {
+                using (Html.BeginForm("Logout", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+                {
+                    @Html.AntiForgeryToken()                    
+                        <form asp-area="Identity" asp-page="/Users/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                            <button type="submit">Logout</button>
+                        </form>                       
+                }
+                @*<div style="padding-top: 15px">
+                 <button class="menuButtons" type="submit"><a asp-area="Identity" asp-page="/Account/Logout"><img src="~/images/LogOut.png" style="padding-right: 18px;"/>Logout</a></button>
+            </div>*@
+            }
         </div>
 
-        </div>
+            </div>
 
 
         <span class="sideBarButton" onclick="openNav()"> <img src="~/images/OpenMenu.png" /></span>

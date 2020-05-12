@@ -10,5 +10,6 @@ namespace TESProject.Models
     {
         public string Name { get; set; }
 
+        public string Deescription { set; get; }
     }
 }

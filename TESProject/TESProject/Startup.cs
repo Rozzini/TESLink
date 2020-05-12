@@ -62,6 +62,7 @@ namespace TESProject
                 options.User.AllowedUserNameCharacters =
                 "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
                 options.User.RequireUniqueEmail = false;
+
             });
 
             services.ConfigureApplicationCookie(options =>
