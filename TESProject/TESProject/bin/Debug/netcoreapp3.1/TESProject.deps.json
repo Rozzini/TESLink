@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v3.1": {
       "TESProject/1.0.0": {
         "dependencies": {
+          "BuildBundlerMinifier": "3.2.447",
           "MailKit": "2.6.0",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "3.1.1",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.1",
@@ -304,6 +305,7 @@
           "TESProject.dll": {}
         }
       },
+      "BuildBundlerMinifier/3.2.447": {},
       "MailKit/2.6.0": {
         "dependencies": {
           "MimeKit": "2.6.0",
@@ -3967,6 +3969,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "BuildBundlerMinifier/3.2.447": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LGsN+WoO/XEaxBFfjsOs6S50k0b0Sqp6tt0AQWoAOU0JzKBQOPIJwXBeZ0c5KRBQPoL5AhFcSpMhAemRQ2AuLw==",
+      "path": "buildbundlerminifier/3.2.447",
+      "hashPath": "buildbundlerminifier.3.2.447.nupkg.sha512"
     },
     "MailKit/2.6.0": {
       "type": "package",

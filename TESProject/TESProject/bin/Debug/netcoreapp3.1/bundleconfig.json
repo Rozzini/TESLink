@@ -1,0 +1,32 @@
+[
+  {
+    "outputFileName": "wwwroot/js/app.js",
+    "inputFiles": [
+      "angular5-app/dist/angular5-app/runtime-es2015.js",
+      "angular5-app/dist/angular5-app/runtime-es5.js",
+      "angular5-app/dist/angular5-app/polyfills-es5.js",
+      "angular5-app/dist/angular5-app/polyfills-es2015.js",
+      "angular5-app/dist/angular5-app/styles-es2015.js",
+      "angular5-app/dist/angular5-app/styles-es5.js",
+      "angular5-app/dist/angular5-app/vendor-es2015.js",
+      "angular5-app/dist/angular5-app/vendor-es5.js",
+      "angular5-app/dist/angular5-app/main-es2015.js",
+      "angular5-app/dist/angular5-app/main-es5.js"
+    ],
+    "minify": {
+      "enabled": false,
+      "renameLocals": false
+    },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/css/app.css",
+    "inputFiles": [
+      "angular5-app/dist/angular5-app/*.js"
+    ],
+    "minify": {
+      "enabled": false,
+      "renameLocals": false
+    }
+  }
+]

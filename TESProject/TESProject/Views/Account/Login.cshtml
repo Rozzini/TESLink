@@ -4,13 +4,60 @@
 }
 
 
-<head>
-    <meta charset="UTF-8">
-    <title>Side Navigation Bar</title>
-    <link rel="stylesheet" href="~/css/LoginPageStyle3.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Side Navigation Bar</title>
+        @*<link rel="stylesheet" href="~/css/LoginPageStyle3.css">*@
+        <link rel="stylesheet" href="~/css/site6.css" />
+        <script src="~/js/site3.js"></script>
+        @*<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">*@
+    
+    </head>
 
-<body>
+
+    <label class="mdc-text-field mdc-text-field--outlined">
+        <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id">
+        <span class="mdc-notched-outline">
+            <span class="mdc-notched-outline__leading"></span>
+            <span class="mdc-notched-outline__notch">
+                <span class="mdc-floating-label" id="my-label-id">Your Name</span>
+            </span>
+            <span class="mdc-notched-outline__trailing"></span>
+        </span>
+    </label>
+
+@*<body>
+    <form method="post" asp-controller="Account" asp-action="Login" asp-route-returnUrl="@Model.ReturnUrl">
+        <img class="img1" src="~/images/ProfilePicture.png" />
+        <h1> Login</h1>
+        <div asp-validation-summary="All" style="color:red; padding-right:40px;" class="text-danger"></div>
+
+        <div class="input-wrapper">
+            <input asp-for="Email" type="text" placeholder="Email" />
+            <label asp-validation-summary="All" style="color:red;" class="text-danger">Email</label>
+        </div>
+
+        <div class="input-wrapper">
+            <input asp-for="Password" type="text" placeholder="Password" />
+            <label>Password</label>
+        </div>
+
+        <div>
+            <input class="submitButton" type="submit" value="Submit" />
+        </div>
+        <h4>Don't have an account yet, <a style="color: White" href="https://localhost:44313/Account/Register">register</a></h4>
+
+        <h4>Forgot password? <a style="color: White" href="https://localhost:44313/Account/ForgotPassword">Reset password</a></h4>
+    </form>
+
+    
+</body>*@
+
+
+
+@*<body>
     <form method="post" asp-controller="Account" asp-action="Login" asp-route-returnUrl="@Model.ReturnUrl">
         <img class="img1" src="~/images/ProfilePicture.png" />
         <h1> Login</h1>
@@ -28,4 +75,5 @@
 
         <h4>Forgot password? <a style="color: White" href="https://localhost:44313/Account/ForgotPassword">Reset password</a></h4>
     </form>
-</body>
+</body>*@
+
